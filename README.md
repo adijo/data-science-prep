@@ -1,3 +1,3 @@
-# Data Science Interview Questions from [Data Science Prep](https://datascienceprep.com/)
+# Interview Questions from [Data Science Prep](https://datascienceprep.com/)
 
 
