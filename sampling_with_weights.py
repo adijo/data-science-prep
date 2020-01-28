@@ -31,15 +31,15 @@ def assign_ranges(categories: Dict[str, int], num_items: int) -> Dict[Tuple[int,
     ranges = dict()
     for category, percentage in categories.items():
         num_items_for_category = round((percentage / num_items) * 100)
-        ranges[(low, low + num_items_for_category)] = category
-        low = low + num_items_for_category + 1
+        ranges[(low, low + num_items_for_category - 1)] = category
+        low = low + num_items_for_category
     return ranges
 
 
 def sample_weights_efficient(categories: Dict[str, int], num_items: int) -> Callable:
     assert sum(categories.values()) == 100
     ranges = assign_ranges(categories, num_items)
-
+    
     def sampler() -> str:
         random_int = random.randrange(1, 101)
         for (low, high), category in ranges.items():
@@ -76,8 +76,8 @@ sampler_two = sample_weights_efficient(
     num_items=100
 )
 
-test_one = empirical_test(sampler_one, 1000000)
-test_two = empirical_test(sampler_two, 1000000)
+test_one = empirical_test(sampler_one, 10000)
+test_two = empirical_test(sampler_two, 10000)
 
 x_axis = test_one.keys()
 
