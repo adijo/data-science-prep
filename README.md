@@ -48,4 +48,4 @@ timestamp	datetime
 ```
 
 ### Solution
-SQL query is [here.](https://github.com/adijo/data-science-prep/blob/master/code/ctr_calculation.py)
+SQL query is [here.](https://github.com/adijo/data-science-prep/blob/master/code/ctr_calculation.sql)
