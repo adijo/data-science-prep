@@ -38,4 +38,14 @@ You are drawing from a normally distributed random variable X ~ N(0, 1) once a d
 ### Solution
 Analytical solution in the Question 3 section of the `pdf` file. Empirical evaluation is [here.](https://github.com/adijo/data-science-prep/blob/master/code/expected_days_normal_distribution.py)
 
+## [SQL] Ad CTR: Facebook [Easy]
+Assume you have the below events table on app analytics. Write a query to get the click-through rate per app in 2019.
+```sqlite-sql
+column_name	type
+app_id	        integer
+event_id	string ("impression", "click")
+timestamp	datetime
+```
 
+### Solution
+SQL query is [here.](https://github.com/adijo/data-science-prep/blob/master/code/ctr_calculation.py)
