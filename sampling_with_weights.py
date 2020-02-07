@@ -39,7 +39,7 @@ def assign_ranges(categories: Dict[str, int], num_items: int) -> Dict[Tuple[int,
 def sample_weights_efficient(categories: Dict[str, int], num_items: int) -> Callable:
     assert sum(categories.values()) == 100
     ranges = assign_ranges(categories, num_items)
-    
+
     def sampler() -> str:
         random_int = random.randrange(1, 101)
         for (low, high), category in ranges.items():
@@ -56,32 +56,37 @@ def empirical_test(sampler: Callable, num_samples: int) -> Dict[str, float]:
     return {key: float(value) / num_samples for key, value in samples.items()}
 
 
-sampler_one = sample_weights_inefficient(
-    categories={
-        "A": 20,
-        "B": 15,
-        "C": 35,
-        "D": 30
-    },
-    num_items=100
-)
+def main():
+    sampler_one = sample_weights_inefficient(
+        categories={
+            "A": 20,
+            "B": 15,
+            "C": 35,
+            "D": 30
+        },
+        num_items=100
+    )
 
-sampler_two = sample_weights_efficient(
-    categories={
-        "A": 20,
-        "B": 15,
-        "C": 35,
-        "D": 30
-    },
-    num_items=100
-)
+    sampler_two = sample_weights_efficient(
+        categories={
+            "A": 20,
+            "B": 15,
+            "C": 35,
+            "D": 30
+        },
+        num_items=100
+    )
 
-test_one = empirical_test(sampler_one, 10000)
-test_two = empirical_test(sampler_two, 10000)
+    test_one = empirical_test(sampler_one, 10000)
+    test_two = empirical_test(sampler_two, 10000)
 
-x_axis = test_one.keys()
+    x_axis = test_one.keys()
 
-plt.bar(x_axis, [test_one[x] for x in x_axis])
-plt.show()
-plt.bar(x_axis, [test_two[x] for x in x_axis])
-plt.show()
+    plt.bar(x_axis, [test_one[x] for x in x_axis])
+    plt.show()
+    plt.bar(x_axis, [test_two[x] for x in x_axis])
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()
