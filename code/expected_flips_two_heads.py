@@ -1,5 +1,6 @@
 """
-Empirical evaluation of Question 2 (solved analytically in the pdf file)
+Empirical evaluation of Question 2 -- `Flips until two heads`
+(solved analytically in the pdf file)
 """
 
 import numpy as np
@@ -25,11 +26,11 @@ def experiment(p: float) -> int:
 
 
 def main():
-    mean_steps = 0
+    total_steps = 0
     num_experiments = 50000
     for _ in range(num_experiments):
-        mean_steps += experiment(p=0.5)
-    print(mean_steps / num_experiments)
+        total_steps += experiment(p=0.5)
+    print(total_steps / num_experiments)
 
 
 if __name__ == "__main__":
