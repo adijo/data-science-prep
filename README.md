@@ -49,3 +49,7 @@ timestamp	datetime
 
 ### Solution
 SQL query is [here.](https://github.com/adijo/data-science-prep/blob/master/code/ctr_calculation.sql)
+
+## [Statistics] Is the coin biased?: Google [Medium]
+A coin was flipped 1000 times, and 550 times it showed up heads. Do you think the coin is biased? Why or why not?
+
