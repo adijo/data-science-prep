@@ -8,7 +8,7 @@ There is a fair coin (one side heads, one side tails) and an unfair coin (both s
 ### Solution 
 Question 1 in the `pdf` file.
 
-===
+---
 
 ## [Coding] Sampling with weights: Lyft [Medium]
 
