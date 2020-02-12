@@ -21,7 +21,7 @@ and D 30% of the time. How do we simulate this?
 What if we care about an arbitrary number of categories and about memory usage?
 
 ### Solution 
-Code in `code/sampling_with_weights.py`
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/sampling_with_weights.py)
 
 ---
 
