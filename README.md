@@ -73,3 +73,11 @@ What is the expected number of rolls needed to see all 6 sides of a fair die?
 
 ### Solution
 Solution is in the Question 5 section of the `pdf` file.
+ 
+--- 
+
+## [Statistics] Picking between two dice games: Facebook [Hard]
+There are two games involving dice that you can play. In the first game, you roll two die at once and get the dollar amount equivalent to the product of the rolls. In the second game, you roll one die and get the dollar amount equivalent to the square of that value. Which has the higher expected value and why?
+
+### Solution
+Solution is in the Question 6 section of the `pdf` file.
