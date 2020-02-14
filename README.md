@@ -86,4 +86,4 @@ Solution is in the Question 6 section of the `pdf` file.
 Say you are given an unfair coin, with an unknown bias towards heads or tails. How can you generate fair odds using this coin?
 
 ### Solution 
-Solution is in the Question 7 section of the `pdf` file.
+Solution is in the Question 7 section of the `pdf` file. Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/unfair_coin.py)
