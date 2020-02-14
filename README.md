@@ -81,3 +81,9 @@ There are two games involving dice that you can play. In the first game, you rol
 
 ### Solution
 Solution is in the Question 6 section of the `pdf` file.
+
+## [Probability] Fair odds from unfair coin: Airbnb [Medium]
+Say you are given an unfair coin, with an unknown bias towards heads or tails. How can you generate fair odds using this coin?
+
+### Solution 
+Solution is in the Question 7 section of the `pdf` file.

@@ -2,15 +2,10 @@
 Empirical evaluation of Question 2 -- `Flips until two heads`
 (solved analytically in the pdf file)
 """
-
-import numpy as np
+from code.common import bernoulli
 
 ZERO, ONE, TWO = 0, 1, 2
 BACKWARD, FORWARD = 0, 1
-
-
-def bernoulli(p: float) -> int:
-    return np.random.binomial(1, p=p)
 
 
 def experiment(p: float) -> int:
