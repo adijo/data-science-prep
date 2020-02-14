@@ -13,7 +13,7 @@ def experiment(p: float) -> int:
         flips = [bernoulli(p), bernoulli(p)]
         if sum(flips) == 1:
             # HT means H and TH means T
-            return HEADS if flips[0] == 1 and flips[1] == 0 else TAILS
+            return HEADS if (flips[0] == HEADS and flips[1] == TAILS) else TAILS
 
 
 def main():
