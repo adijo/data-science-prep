@@ -1,6 +1,7 @@
-from common import bernoulli
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+from common import bernoulli
 
 sns.set(style="darkgrid")
 
