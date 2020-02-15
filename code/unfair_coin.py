@@ -10,16 +10,16 @@ HEADS, TAILS = 1, 0
 
 def experiment(p: float) -> int:
     while True:
-        flips = [bernoulli(p), bernoulli(p)]
-        if sum(flips) == 1:
+        first_flip, second_flip = bernoulli(p), bernoulli(p)
+        if first_flip + second_flip == 1:
             # HT means H and TH means T
-            return HEADS if (flips[0] == HEADS and flips[1] == TAILS) else TAILS
+            return HEADS if (first_flip == HEADS and second_flip == TAILS) else TAILS
 
 
 def main():
     num_experiments = 100000
     num_heads = 0
-    p: float = 0.7
+    p: float = 0.73242342
     for _ in range(num_experiments):
         if experiment(p) == HEADS:
             num_heads += 1
