@@ -57,23 +57,20 @@ def empirical_test(sampler: Callable, num_samples: int) -> Dict[str, float]:
 
 
 def main():
+    categories = {
+        "A": 20,
+        "B": 15,
+        "C": 35,
+        "D": 30
+    }
+
     sampler_one = sample_weights_inefficient(
-        categories={
-            "A": 20,
-            "B": 15,
-            "C": 35,
-            "D": 30
-        },
+        categories=categories,
         num_items=100
     )
 
     sampler_two = sample_weights_efficient(
-        categories={
-            "A": 20,
-            "B": 15,
-            "C": 35,
-            "D": 30
-        },
+        categories=categories,
         num_items=100
     )
 
