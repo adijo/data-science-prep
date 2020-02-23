@@ -2,9 +2,10 @@ from typing import List
 
 
 def generate_integer_partitions(target: int) -> List[List[int]]:
+
     ret_val = list()
 
-    def _generate(n: int, max_val: int, curr_partition: List[int]):
+    def _generate(n: int, max_val: int, curr_partition: List[int]) -> None:
         if n == 0:
             ret_val.append(curr_partition.copy()[::-1])
         else:
