@@ -1,5 +1,7 @@
 from typing import List
 
+from common import reverse
+
 
 def generate_integer_partitions(target: int) -> List[List[int]]:
 
@@ -7,7 +9,7 @@ def generate_integer_partitions(target: int) -> List[List[int]]:
 
     def _generate(n: int, max_val: int, curr_partition: List[int]) -> None:
         if n == 0:
-            ret_val.append(curr_partition.copy()[::-1])
+            ret_val.append(reverse(curr_partition.copy()))
         else:
             if max_val <= n:
                 curr_partition.append(max_val)
@@ -18,7 +20,7 @@ def generate_integer_partitions(target: int) -> List[List[int]]:
                 _generate(n, max_val - 1, curr_partition)
 
     _generate(target, target, list())
-    return ret_val[::-1]
+    return reverse(ret_val)
 
 
 assert generate_integer_partitions(4) == [
