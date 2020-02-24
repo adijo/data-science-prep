@@ -81,21 +81,29 @@ There are two games involving dice that you can play. In the first game, you rol
 
 ### Solution
 Solution is in the Question 6 section of the `pdf` file.
-
+---
 ## [Probability] Fair odds from unfair coin: Airbnb [Medium]
 Say you are given an unfair coin, with an unknown bias towards heads or tails. How can you generate fair odds using this coin?
 
 ### Solution 
 Solution is in the Question 7 section of the `pdf` file. Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/unfair_coin.py)
-
+---
 ## [Probability] Ant Collision: Facebook [Medium]
 Three ants are sitting at the corners of an equilateral triangle. Each ant randomly picks a direction and starts moving along the edge of the triangle. What is the probability that none of the ants collide? Now, what if it is k ants on all k corners of an equilateral polygon?
 
 ### Solution 
 Solution is in the Question 8 section of the `pdf` file.
-
+---
 ## [Coding] Generating integer partitions: Stripe [Medium]
 Write a program to generate the partitions for a number `n`. A partition for `n` is a list of positive integers that sum up to `n.` For example: if `n = 4`, we want to return the following partitions: `[1,1,1,1], [1,1,2], [2,2], [1,3]`, and `[4]`. Note that a partition`[1,3]` is the same as `[3,1]` so only the former is included.
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/integer_partitions.py)
+---
+
+## [ML] Classification Metrics: Uber [Medium]
+Say you need to produce a binary classifier for fraud detection. What metrics would you look at, how is each defined, and what is the interpretation of each one?
+
+### Solution
+Question 9 of the `pdf` file.
+---
