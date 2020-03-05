@@ -112,3 +112,9 @@ Say you need to produce a binary classifier for fraud detection. What metrics wo
 Question 9 of the `pdf` file.
 
 ---
+
+## [Statistics] Simulating a standard normal distribution: Uber [Hard]
+Say you are given a random Bernoulli trial generator. How would you generate values from a standard normal distribution?
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/Standard%20Normal%20From%20Bernoulli.ipynb)
