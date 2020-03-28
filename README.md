@@ -118,3 +118,13 @@ Say you are given a random Bernoulli trial generator. How would you generate val
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/Standard%20Normal%20From%20Bernoulli.ipynb)
+
+---
+
+## [Coding] Correlation by hand: Robinhood [Medium]
+This problem was asked by Robinhood.
+
+Write a program to calculate correlation (without any libraries except for math) for two lists X and Y.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/correlation.py)
