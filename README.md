@@ -128,3 +128,20 @@ Write a program to calculate correlation (without any libraries except for math)
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/correlation.py)
+
+---
+
+## [Probability] Flipping game: Facebook [Easy]
+You and your friend are playing a game. The two of you will continue to toss a coin until the sequence HH or TH shows up. If HH shows up first, you win. If TH shows up first, your friend wins. What is the probability of you winning?
+
+### Solution
+Question 10 of the `pdf` file.
+
+--- 
+
+## [Probability] First to roll side k: Lyft [Medium]
+A and B are playing the following game: a number k from 1-6 is chosen, and A and B will toss a die until the first person sees the side k, and that person gets $100. How much is A willing to pay to play first in this game?
+
+### Solution
+Question 11 of the `pdf` file.
+
