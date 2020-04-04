@@ -145,3 +145,10 @@ A and B are playing the following game: a number k from 1-6 is chosen, and A and
 ### Solution
 Question 11 of the `pdf` file.
 
+---
+
+## [Coding] Max Sum Increasing Subsequence: Uber [Medium]
+Given a list of positive integers, return the maximum increasing subsequence, that is, the largest increasing subsequence within the array that has the maximum sum. Examples: if the input is [5, 4, 3, 2, 1] then return 5 (since no subsequence is increasing), if the input is [3, 2, 5, 7, 6] return 15 = 3 + 5 + 7, etc.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/max_sum_increasing_subsequence.py)
