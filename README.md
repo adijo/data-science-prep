@@ -152,3 +152,12 @@ Given a list of positive integers, return the maximum increasing subsequence, th
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/max_sum_increasing_subsequence.py)
+
+---
+
+## [Statistics] One extra coin toss: Robinhood [Medium]
+
+A and B are playing a game where A has n+1 coins, B has n coins, and they each flip all of their coins. What is the probability that A will have more heads than B?
+
+### Solution
+Question 12 of the `pdf` file.
