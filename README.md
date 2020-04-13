@@ -161,3 +161,11 @@ A and B are playing a game where A has n+1 coins, B has n coins, and they each f
 
 ### Solution
 Question 12 of the `pdf` file.
+
+--- 
+
+## [Probability] Labeling content: Facebook [Easy]
+Facebook has a content team that labels pieces of content on the platform as spam or not spam. 90% of them are diligent raters and will label 20% of the content as spam and 80% as non-spam. The remaining 10% are non-diligent raters and will label 0% of the content as spam and 100% as non-spam. Assume the pieces of content are labeled independently from one another, for every rater. Given that a rater has labeled 4 pieces of content as good, what is the probability that they are a diligent rater?
+
+### Solution
+Question 13 of the `pdf` file.
