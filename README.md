@@ -169,3 +169,11 @@ Facebook has a content team that labels pieces of content on the platform as spa
 
 ### Solution
 Question 13 of the `pdf` file.
+
+--- 
+
+## [Statistics] Coin flips needed to detect bias: Lyft [Medium]
+Say you have an unfair coin which will land on heads 60% of the time. How many coin flips are needed to detect that the coin is unfair?
+
+### Solution
+Question 14 of thre `pdf` file.
