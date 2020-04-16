@@ -64,8 +64,8 @@ SQL query is [here.](https://github.com/adijo/data-science-prep/blob/master/code
 A coin was flipped 1000 times, and 550 times it showed up heads. Do you think the coin is biased? Why or why not?
 
 ### Solution
-Solution is in the Question 4 section of the `pdf` file. The computation is [here.](https://github.com/adijo/data-science-prep/blob/master/code/Is%20this%20coin%20biased%3F.ipynb)
-I've also added an additional Bayesian Modeling approach to this problem using `pymc3` [here.](https://github.com/adijo/data-science-prep/blob/master/code/Bayesian%20Modelling%20Coin%20Flips.ipynb)
+Solution is in the Question 4 section of the `pdf` file. The computation is [here.](https://github.com/adijo/data-science-prep/blob/master/code/Is%20this%20coin%20biased%3F.ipynb) I've also added an additional Bayesian Modeling approach to this problem using `pymc3` [here.](https://github.com/adijo/data-science-prep/blob/master/code/Bayesian%20Modelling%20Coin%20Flips.ipynb)
+
 ---
 
 ## [Probability] Rolls to see all sides: Facebook [Medium]
