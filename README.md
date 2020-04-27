@@ -176,4 +176,12 @@ Question 13 of the `pdf` file.
 Say you have an unfair coin which will land on heads 60% of the time. How many coin flips are needed to detect that the coin is unfair?
 
 ### Solution
-Question 14 of thre `pdf` file.
+Question 14 of the `pdf` file.
+
+---
+## [Coding] Friendship distance: Facebook [Medium]
+
+You have the entire social graph of Facebook users, with nodes representing users and edges representing friendships between users. Given the edges of the graph and the number of nodes, write a function to return the smallest number of friendships in-between two users.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/social_graph.py)
