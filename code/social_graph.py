@@ -27,16 +27,16 @@ def make_friendship_graph(nodes: List[str], edges: List[Tuple[str, str]]) -> Dic
     We assume that the graph is connected for this example.
     """
 
-    graph: Dict[str, User] = {
+    user_graph: Dict[str, User] = {
         node: User(user_id=node, friends=list()) for node in nodes
     }
 
     for edge in edges:
         node_a, node_b = edge
-        graph.get(node_a).friends.append(graph.get(node_b))
-        graph.get(node_b).friends.append(graph.get(node_a))
+        user_graph.get(node_a).friends.append(user_graph.get(node_b))
+        user_graph.get(node_b).friends.append(user_graph.get(node_a))
 
-    return graph
+    return user_graph
 
 
 def smallest_friendships(from_user: User, to_user: User) -> int:
@@ -53,6 +53,7 @@ def smallest_friendships(from_user: User, to_user: User) -> int:
             if friend not in visited:
                 visited.add(friend)
                 q.append((friend, dist + 1))
+
     return NO_FRIENDSHIP
 
 
