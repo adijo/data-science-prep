@@ -22,7 +22,8 @@ class User:
         return self.user_id
 
 
-def make_friendship_graph(nodes: List[str], edges: List[Tuple[str, str]]) -> Dict[str, User]:
+def make_friendship_graph(nodes: List[str],
+                          edges: List[Tuple[str, str]]) -> Dict[str, User]:
     """
     We assume that the graph is connected for this example.
     """
@@ -33,8 +34,8 @@ def make_friendship_graph(nodes: List[str], edges: List[Tuple[str, str]]) -> Dic
 
     for edge in edges:
         node_a, node_b = edge
-        user_graph.get(node_a).friends.append(user_graph.get(node_b))
-        user_graph.get(node_b).friends.append(user_graph.get(node_a))
+        user_graph[node_a].friends.append(user_graph[node_b])
+        user_graph[node_b].friends.append(user_graph[node_a])
 
     return user_graph
 
