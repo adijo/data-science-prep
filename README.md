@@ -185,3 +185,11 @@ You have the entire social graph of Facebook users, with nodes representing user
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/social_graph.py)
+
+---
+
+## [Probability] Max Dice Roll: Spotify [Medium]
+A fair die is rolled `n` times. What is the probability that the largest number rolled is `r`, for each `r` in `1..6`?
+
+### Solution
+Question 15 of the `pdf` file.
