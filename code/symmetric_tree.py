@@ -12,9 +12,7 @@ class TreeNode:
 
 
 def is_tree_symmetric(node: TreeNode) -> bool:
-    if node is None:
-        return True
-    return is_tree_symmetric_helper(node.left, node.right)
+    return True if node is None else is_tree_symmetric_helper(node.left, node.right)
 
 
 def is_tree_symmetric_helper(left: TreeNode, right: TreeNode) -> bool:
