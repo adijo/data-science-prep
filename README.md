@@ -201,3 +201,10 @@ Given a binary tree, write a function to determine whether the tree is a mirror 
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/symmetric_tree.py)
+
+---
+## [Statistics] Customer Churn MLE: Airbnb [Medium]
+Say you model the lifetime for a set of customers using an exponential distribution with parameter `λ`, and you have the lifetime history (in months) of `n` customers. What is the MLE for `λ`?
+
+### Solution
+Question 16 in the `pdf` file
