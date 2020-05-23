@@ -208,3 +208,10 @@ Say you model the lifetime for a set of customers using an exponential distribut
 
 ### Solution
 Question 16 in the `pdf` file
+
+---
+## [Statistics] Server Wait Time: Dropbox [Medium]
+Dropbox has just started and there are two servers that service users: a faster server and a slower server. When a user is on the website, they are routed to either server randomly, and the wait time is exponentially distributed with two different parameters. What is the probability density of a random user's waiting time?
+
+### Solution
+Question 17 in the `pdf` file.
