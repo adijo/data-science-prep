@@ -21,14 +21,14 @@ def is_inside_circle(a: Point) -> bool:
 
 def simulate(n_iter: int) -> float:
 
-    within_circle: int = sum(
+    num_points_within_circle: int = sum(
         [
             1 if is_inside_circle(Point(x=random.random(), y=random.random())) else 0
             for _ in range(n_iter)
         ]
     )
 
-    return (float(within_circle) / n_iter) * 4
+    return (float(num_points_within_circle) / n_iter) * 4
 
 
 epsilon = 0.01
