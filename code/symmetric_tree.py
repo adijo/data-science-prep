@@ -2,7 +2,6 @@ from __future__ import annotations
 
 
 class TreeNode:
-
     def __init__(self, val: int):
         self.val = val
 
@@ -23,9 +22,11 @@ def is_tree_symmetric_helper(left: TreeNode, right: TreeNode) -> bool:
     elif left is None and right is not None:
         return False
     else:
-        return left.val == right.val and \
-            is_tree_symmetric_helper(left.right, right.left) and \
-            is_tree_symmetric_helper(left.left, right.right)
+        return (
+            left.val == right.val
+            and is_tree_symmetric_helper(left.right, right.left)
+            and is_tree_symmetric_helper(left.left, right.right)
+        )
 
 
 # Level 1
@@ -33,8 +34,7 @@ one = TreeNode(1)
 # Level 2
 two, three = TreeNode(2), TreeNode(2)
 # Level 3
-four, five, six, seven = TreeNode(3), TreeNode(4), \
-                         TreeNode(4), TreeNode(3)
+four, five, six, seven = TreeNode(3), TreeNode(4), TreeNode(4), TreeNode(3)
 
 one.left, one.right = two, three
 two.left, two.right = four, five

@@ -17,6 +17,4 @@ def correlation(x: List[int], y: List[int]) -> float:
 
 epsilon = 0.001
 a, b = [0, 14, 1, 10, 5], [2, 6, 8, 5, 6]
-assert abs(
-    correlation(a, b) - np.corrcoef(a, b)[0][1]
-) < epsilon
+assert abs(correlation(a, b) - np.corrcoef(a, b)[0][1]) < epsilon

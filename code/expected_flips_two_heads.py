@@ -2,7 +2,7 @@
 Empirical evaluation of Question 2 -- `Flips until two heads`
 (solved analytically in the pdf file)
 """
-from code.common import bernoulli
+from common import bernoulli
 
 ZERO, ONE, TWO = 0, 1, 2
 BACKWARD, FORWARD = 0, 1

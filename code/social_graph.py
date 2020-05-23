@@ -12,7 +12,7 @@ class User:
     user_id: str
     friends: List[User]
 
-    def __eq__(self: User, other: User):
+    def __eq__(self: User, other: User) -> bool:
         return self.user_id == other.user_id
 
     def __hash__(self: User) -> int:
@@ -22,8 +22,9 @@ class User:
         return self.user_id
 
 
-def make_friendship_graph(nodes: List[str],
-                          edges: List[Tuple[str, str]]) -> Dict[str, User]:
+def make_friendship_graph(
+    nodes: List[str], edges: List[Tuple[str, str]]
+) -> Dict[str, User]:
     """
     We assume that the graph is connected for this example.
     """
@@ -42,7 +43,7 @@ def make_friendship_graph(nodes: List[str],
 
 def smallest_friendships(from_user: User, to_user: User) -> int:
     q = deque([(from_user, 0)])
-    visited = set()
+    visited = {from_user}
 
     while len(q) > 0:
         top, dist = q.popleft()
@@ -60,7 +61,7 @@ def smallest_friendships(from_user: User, to_user: User) -> int:
 
 graph = make_friendship_graph(
     nodes=["a", "b", "c", "d", "e"],
-    edges=[("a", "b"), ("b", "d"), ("a", "c"), ("b", "d"), ("d", "e")]
+    edges=[("a", "b"), ("b", "d"), ("a", "c"), ("b", "d"), ("d", "e")],
 )
 assert smallest_friendships(graph["a"], graph["e"]) == 2
 assert smallest_friendships(graph["a"], graph["c"]) == 0
