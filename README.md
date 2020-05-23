@@ -215,3 +215,12 @@ Dropbox has just started and there are two servers that service users: a faster 
 
 ### Solution
 Question 17 in the `pdf` file.
+
+--- 
+## [Coding] Estimating Pi: Stripe [Medium]
+This problem was asked by Stripe.
+
+Estimate `π` using a Monte Carlo method. Hint: think about throwing darts on a square and seeing where they land within a circle.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/estimate_pi.py)
