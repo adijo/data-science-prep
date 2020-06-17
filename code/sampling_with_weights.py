@@ -26,7 +26,9 @@ def sample_weights_inefficient(categories: Dict[str, int], num_items: int) -> Ca
     return sampler
 
 
-def assign_ranges(categories: Dict[str, int], num_items: int) -> Dict[Tuple[int, int], str]:
+def assign_ranges(
+    categories: Dict[str, int], num_items: int
+) -> Dict[Tuple[int, int], str]:
     low = 1
     ranges = dict()
     for category, percentage in categories.items():
@@ -45,6 +47,7 @@ def sample_weights_efficient(categories: Dict[str, int], num_items: int) -> Call
         for (low, high), category in ranges.items():
             if low <= random_int <= high:
                 return category
+
     return sampler
 
 
@@ -57,22 +60,11 @@ def empirical_test(sampler: Callable, num_samples: int) -> Dict[str, float]:
 
 
 def main():
-    categories = {
-        "A": 20,
-        "B": 15,
-        "C": 35,
-        "D": 30
-    }
+    categories = {"A": 20, "B": 15, "C": 35, "D": 30}
 
-    sampler_one = sample_weights_inefficient(
-        categories=categories,
-        num_items=100
-    )
+    sampler_one = sample_weights_inefficient(categories=categories, num_items=100)
 
-    sampler_two = sample_weights_efficient(
-        categories=categories,
-        num_items=100
-    )
+    sampler_two = sample_weights_efficient(categories=categories, num_items=100)
 
     test_one = empirical_test(sampler_one, 10000)
     test_two = empirical_test(sampler_two, 10000)

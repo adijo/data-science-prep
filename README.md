@@ -224,3 +224,14 @@ Estimate `π` using a Monte Carlo method. Hint: think about throwing darts on a 
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/estimate_pi.py)
+
+---
+
+## [Probability] First toss: Lyft [Medium]
+This problem was asked by Lyft.
+
+A fair coin is tossed n times. Given that there were k heads in the n tosses, what is the probability that the first toss was heads?
+
+### Solution
+Question 18 in the `pdf ` file.
+
