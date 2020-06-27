@@ -27,18 +27,22 @@ def topic_groups(adjacency_matrix: List[List[int]]) -> int:
     graph: Graph = make_graph(adjacency_matrix)
     topics: int = 0
     visited: Set[int] = set()
+
+    def visit(curr_node: int) -> None:
+        for neighbour in graph.get_neighbours(curr_node):
+            if neighbour not in visited:
+                visited.add(neighbour)
+                visit(neighbour)
+
     for node in range(num_nodes):
         if node not in visited:
-            visit(node, graph, visited)
+            visit(node)
             topics += 1
+
     return topics
 
 
-def visit(node: int, graph: Graph, visited: Set[int]) -> None:
-    for neighbour in graph.get_neighbours(node):
-        if neighbour not in visited:
-            visited.add(neighbour)
-            visit(neighbour, graph, visited)
+
 
 
 assert (
