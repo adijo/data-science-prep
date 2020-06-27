@@ -22,7 +22,7 @@ class Graph:
 
 
 def make_graph(adjacency_matrix: List[List[int]]) -> Graph:
-    graph = Graph()
+    graph: Graph = Graph()
     for i in range(len(adjacency_matrix)):
         for j in range(len(adjacency_matrix[0])):
             if adjacency_matrix[i][j] == 1:
@@ -31,7 +31,7 @@ def make_graph(adjacency_matrix: List[List[int]]) -> Graph:
 
 
 def topic_groups(adjacency_matrix: List[List[int]]) -> int:
-    graph = make_graph(adjacency_matrix)
+    graph: Graph = make_graph(adjacency_matrix)
     topics: int = 0
     visited: Set[int] = set()
     for node in range(len(adjacency_matrix)):

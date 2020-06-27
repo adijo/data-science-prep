@@ -8,3 +8,7 @@ def bernoulli(p: float) -> int:
 
 def reverse(a: List) -> List:
     return a[::-1]
+
+
+def almost_equal(a: float, b: float, epsilon: float = 0.01) -> bool:
+    return abs(a - b) < epsilon

@@ -1,6 +1,7 @@
 import math
 import random
 from dataclasses import dataclass
+from common import almost_equal
 
 from scipy.spatial import distance
 
@@ -33,5 +34,4 @@ def simulate(n_iter: int) -> float:
     return (float(num_points_within_circle) / n_iter) * 4
 
 
-epsilon = 0.01
-assert abs(simulate(100000) - math.pi) < epsilon
+assert almost_equal(simulate(100000), math.pi)

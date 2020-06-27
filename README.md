@@ -233,7 +233,7 @@ This problem was asked by Lyft.
 A fair coin is tossed n times. Given that there were k heads in the n tosses, what is the probability that the first toss was heads?
 
 ### Solution
-Question 18 in the `pdf ` file.
+Question 18 in the `pdf` file.
 
 ---
 
@@ -244,3 +244,12 @@ Define a topic group to be any group of topics that either directly or indirectl
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/topic_groups.py)
+
+---
+
+## [Probability] Coin Recursion: Robinhood [Medium]
+
+A biased coin, with probability `p` of landing on heads, is tossed `n` times. Write a recurrence relation for the probability that the total number of heads after `n` tosses is even.
+
+### Solution
+Question 19 of the `pdf` file has the solution and an implementation of the solution is [here.](https://github.com/adijo/data-science-prep/blob/master/code/even_heads.py)
