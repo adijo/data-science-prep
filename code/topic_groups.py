@@ -1,28 +1,20 @@
-from typing import List, Set, Dict
+from collections import defaultdict
+from typing import List, Set, DefaultDict
 
 
 class Graph:
-    _graph: Dict[int, Set[int]] = dict()
-
-    def _has_node(self, idx: int) -> bool:
-        return idx in self._graph
+    _graph: DefaultDict[int, Set[int]] = defaultdict(set)
 
     def add_edge(self, one: int, two: int) -> None:
-        if one not in self._graph:
-            self._graph[one] = set()
-        if two not in self._graph:
-            self._graph[two] = set()
-
         self._graph[one].add(two)
         self._graph[two].add(one)
 
     def get_neighbours(self, idx: int) -> Set[int]:
-        assert self._has_node(idx)
         return self._graph.get(idx)
 
 
 def make_graph(adjacency_matrix: List[List[int]]) -> Graph:
-    graph: Graph = Graph()
+    graph = Graph()
     for i in range(len(adjacency_matrix)):
         for j in range(len(adjacency_matrix[0])):
             if adjacency_matrix[i][j] == 1:
@@ -31,13 +23,14 @@ def make_graph(adjacency_matrix: List[List[int]]) -> Graph:
 
 
 def topic_groups(adjacency_matrix: List[List[int]]) -> int:
+    num_nodes: int = len(adjacency_matrix)
     graph: Graph = make_graph(adjacency_matrix)
     topics: int = 0
     visited: Set[int] = set()
-    for node in range(len(adjacency_matrix)):
+    for node in range(num_nodes):
         if node not in visited:
-            topics += 1
             visit(node, graph, visited)
+            topics += 1
     return topics
 
 

@@ -3,6 +3,7 @@ from common import almost_equal
 
 
 def even_heads(tosses: int, p: float) -> float:
+
     @lru_cache(None)
     def _even_heads(n: int, even: bool) -> float:
         if n == 0:
