@@ -235,3 +235,12 @@ A fair coin is tossed n times. Given that there were k heads in the n tosses, wh
 ### Solution
 Question 18 in the `pdf ` file.
 
+---
+
+## [Coding] Topic Groups: Twitter [Medium]
+Say that there are n topics on Twitter and there is a notion of topics being related. Specifically, if topic A is related to topic B, and topic B is related to topic C, then topic A is indirectly related to topic C.
+
+Define a topic group to be any group of topics that either directly or indirectly related. Given an n by n adjacency matrix N, where `N[i][j] = 1` if topic `i` and topic are `j` related and 0 otherwise, write a function to determine how many topic groups are there.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/topic_groups.py)
