@@ -1,32 +1,33 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
+from typing import Optional
 
+
+@dataclass
 class TreeNode:
-    def __init__(self, val: int):
-        self.val = val
-
     val: int
-    left: TreeNode = None
-    right: TreeNode = None
+    left: Optional[TreeNode] = None
+    right: Optional[TreeNode] = None
 
 
 def is_tree_symmetric(node: TreeNode) -> bool:
-    return True if node is None else is_tree_symmetric_helper(node.left, node.right)
 
+    def _is_tree_symmetric(left: TreeNode, right: TreeNode) -> bool:
+        if left is None and right is None:
+            return True
+        elif left is not None and right is None:
+            return False
+        elif left is None and right is not None:
+            return False
+        else:
+            return (
+                    left.val == right.val
+                    and _is_tree_symmetric(left.right, right.left)
+                    and _is_tree_symmetric(left.left, right.right)
+            )
 
-def is_tree_symmetric_helper(left: TreeNode, right: TreeNode) -> bool:
-    if left is None and right is None:
-        return True
-    elif left is not None and right is None:
-        return False
-    elif left is None and right is not None:
-        return False
-    else:
-        return (
-            left.val == right.val
-            and is_tree_symmetric_helper(left.right, right.left)
-            and is_tree_symmetric_helper(left.left, right.right)
-        )
+    return True if node is None else _is_tree_symmetric(node.left, node.right)
 
 
 # Level 1

@@ -24,8 +24,8 @@ def make_graph(adjacency_matrix: List[List[int]]) -> Graph:
 
 def topic_groups(adjacency_matrix: List[List[int]]) -> int:
     num_nodes: int = len(adjacency_matrix)
+
     graph: Graph = make_graph(adjacency_matrix)
-    topics: int = 0
     visited: Set[int] = set()
 
     def visit(curr_node: int) -> None:
@@ -33,6 +33,8 @@ def topic_groups(adjacency_matrix: List[List[int]]) -> int:
             if neighbour not in visited:
                 visited.add(neighbour)
                 visit(neighbour)
+
+    topics: int = 0
 
     for node in range(num_nodes):
         if node not in visited:
