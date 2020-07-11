@@ -261,3 +261,11 @@ Given `n` distinct integers, write a function to generate all permutations of th
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/permutations.py)
+
+---
+
+## [Probability] Random Testing: Lyft [Easy]
+Say that you are pushing a new feature `X` out. You have `1000` users and each user is either a fan or not a fan of X, at random. There are `50` users of `1000` that do not like `X.` You will decide whether to ship the feature or not based on sampling 5 users independently and if they all like the feature, you will ship it. What is the probability that you will ship the feature?
+
+### Solution
+Question 20 of the `pdf` file.
