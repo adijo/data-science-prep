@@ -254,6 +254,7 @@ A biased coin, with probability `p` of landing on heads, is tossed `n` times. Wr
 ### Solution
 Question 19 of the `pdf` file has the solution and an implementation of the solution is [here.](https://github.com/adijo/data-science-prep/blob/master/code/even_heads.py)
 
+---
 
 ## [Coding] Permutations: Dropbox [Medium]
 Given `n` distinct integers, write a function to generate all permutations of those integers.
