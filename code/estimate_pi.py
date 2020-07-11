@@ -14,16 +14,16 @@ class Point:
     y: float
 
 
+def euclidean_distance(a: Point, b: Point) -> float:
+    return distance.euclidean((a.x, a.y), (b.x, b.y))
+
+
 class UnitCircle:
     center: ClassVar[Point] = Point(0.5, 0.5)
     radius: ClassVar[float] = 0.5
 
-    @staticmethod
-    def euclidean_distance(a: Point, b: Point) -> float:
-        return distance.euclidean((a.x, a.y), (b.x, b.y))
-
     def contains(self, point: Point) -> bool:
-        return UnitCircle.euclidean_distance(point, self.center) < self.radius
+        return euclidean_distance(point, self.center) < self.radius
 
 
 def simulate(n_iter: int) -> float:
