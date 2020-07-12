@@ -1,7 +1,7 @@
 import math
 import random
 from dataclasses import dataclass
-from typing import ClassVar
+from typing import ClassVar, Generator
 
 from common import almost_equal
 
@@ -28,7 +28,7 @@ class UnitCircle:
 
 def simulate(n_iter: int) -> float:
     unit_circle = UnitCircle()
-    random_points = (Point(x=random.random(), y=random.random()) for _ in range(n_iter))
+    random_points: Generator[Point] = (Point(x=random.random(), y=random.random()) for _ in range(n_iter))
     num_points_within_circle: int = sum(
         [1 if unit_circle.contains(point) else 0 for point in random_points]
     )
