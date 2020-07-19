@@ -1,5 +1,6 @@
 import numpy as np
 from typing import List
+from common import almost_equal
 
 
 def correlation(x: List[int], y: List[int]) -> float:
@@ -15,6 +16,5 @@ def correlation(x: List[int], y: List[int]) -> float:
     return numerator / denominator
 
 
-epsilon = 0.001
 a, b = [0, 14, 1, 10, 5], [2, 6, 8, 5, 6]
-assert abs(correlation(a, b) - np.corrcoef(a, b)[0][1]) < epsilon
+assert almost_equal(correlation(a, b), np.corrcoef(a, b)[0][1])
