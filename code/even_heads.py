@@ -4,7 +4,7 @@ from common import almost_equal
 
 def even_heads(tosses: int, p: float) -> float:
 
-    @lru_cache(None)
+    @lru_cache(maxsize=128)
     def _even_heads(n: int, even: bool) -> float:
         if n == 0:
             return 1 if even else 0
