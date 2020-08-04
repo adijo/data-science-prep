@@ -135,7 +135,7 @@ Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/corr
 You and your friend are playing a game. The two of you will continue to toss a coin until the sequence HH or TH shows up. If HH shows up first, you win. If TH shows up first, your friend wins. What is the probability of you winning?
 
 ### Solution
-Question 10 of the `pdf` file.
+Question 10 of the `pdf` file and a simulation is [here](https://github.com/adijo/data-science-prep/blob/master/code/flipping_game.py)
 
 --- 
 
