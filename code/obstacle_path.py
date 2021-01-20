@@ -4,19 +4,20 @@ from typing import List
 def obstacle_paths(grid: List[List[int]]) -> int:
 
     obstacle = 1
+    m, n = len(grid), len(grid[0])
 
     # dp[i][j] contains the value for the number of paths from
     # i, j to the final destination len(grid) - 1, len(grid[0]) - 1
 
-    dp = [[0 for _ in range(len(grid[0]))] for _ in range(len(grid))]
+    dp = [[0 for _ in range(n)] for _ in range(m)]
 
     def _is_valid(i: int, j: int) -> bool:
-        return 0 <= i < len(grid) and 0 <= j < len(grid[0])
+        return 0 <= i < m and 0 <= j < n
 
-    dest_i, dest_j = len(grid) - 1, len(grid[0]) - 1
+    dest_i, dest_j = m - 1, n - 1
 
-    for i in range(len(grid) - 1, -1, -1):
-        for j in range(len(grid[0]) - 1, -1, -1):
+    for i in range(m - 1, -1, -1):
+        for j in range(n - 1, -1, -1):
 
             if grid[i][j] == obstacle:
                 continue
