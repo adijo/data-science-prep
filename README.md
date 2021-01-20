@@ -269,3 +269,13 @@ Say that you are pushing a new feature `X` out. You have `1000` users and each u
 
 ### Solution
 Question 20 of the `pdf` file.
+
+---
+
+## [Coding] All Combinations: Twitch [Medium] 
+Given an integer n and an integer k, output a list of all of the combinations of k numbers from 1 to n.
+
+For example, if the `n = 3`, and `k = 2` then return: `[1, 2], [1, 3], [2, 3]`.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/all_combinations.py)
