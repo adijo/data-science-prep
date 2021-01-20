@@ -279,3 +279,14 @@ For example, if the `n = 3`, and `k = 2` then return: `[1, 2], [1, 3], [2, 3]`.
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/all_combinations.py)
+
+---
+
+## [Coding] Obstacle Paths: Twitch [Medium]
+
+You are given an `m` by `n` matrix with `0s` and `1s`, where a `1` represents an obstacle and a `0` represents no obstacle. Determine the number of ways to navigate from the top-left corner of the matrix to the bottom right corner given that at any point in time there is only a move down or to the right as long as there is not an obstacle in that spot.
+
+For example, if the matrix is given by: `[[0, 0, 0], [1, 1, 0], [0, 1, 0]]` then you should return `1` since there is exactly one path.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/obstacle_path.py)
