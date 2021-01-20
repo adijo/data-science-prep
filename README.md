@@ -290,3 +290,11 @@ For example, if the matrix is given by: `[[0, 0, 0], [1, 1, 0], [0, 1, 0]]` then
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/obstacle_path.py)
+
+--- 
+
+## [Probability] Fan Groups: Snapchat [Easy]
+You are testing a new feature with various sample groups of three people. Assume that each person is equally likely to be a fan or not a fan of the feature. What is the probability that a randomly chosen group has exactly one fan, given that there is a fan among the three?
+
+### Solution
+Question 21 of the `pdf` file.
