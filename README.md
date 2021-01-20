@@ -298,3 +298,12 @@ You are testing a new feature with various sample groups of three people. Assume
 
 ### Solution
 Question 21 of the `pdf` file.
+
+--- 
+
+## [Probability] Hit Show: Netflix [Hard]
+
+Before a show is released, it is shown to several in-house raters. You assume there are two types of shows: hits, which have an `80%` chance of being liked by any viewer, and misses, which have a `20%` chance of being liked by any viewer. There is currently a new show which you believe has a prior distribution of `60%` being a hit, and `40%` being a miss. Given that `8` raters rated the show and `6` of the `8` liked the show, what is the new posterior distribution of being a hit or miss?
+
+### Solution
+Question 22 of the `pdf` file.
