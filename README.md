@@ -307,3 +307,14 @@ Before a show is released, it is shown to several in-house raters. You assume th
 
 ### Solution
 Question 22 of the `pdf` file.
+
+---
+
+## [Coding] Palindrome Counting: Opendoor [Medium]
+
+Given a string, return the count of substrings within the string that are palindromes.
+
+For example, if input is `aba`: return `4`, since the palindromes are: `a`, `b`, `a`, and `aba`.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/palindrome_counting.py)
