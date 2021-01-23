@@ -318,3 +318,14 @@ For example, if input is `aba`: return `4`, since the palindromes are: `a`, `b`,
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/palindrome_counting.py)
+
+---
+
+## [Coding] Intersection of Two Arrays: Pinterest [Easy]
+
+Given two arrays, write a function to get the intersection of the two.
+
+For example, if `A = [2, 4, 1, 5, 0]`, and `B = [3, 4, 5]` then you should return `[4, 5].`
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/intersection_of_two_arrays.py)
