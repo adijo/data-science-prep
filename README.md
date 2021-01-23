@@ -329,3 +329,12 @@ For example, if `A = [2, 4, 1, 5, 0]`, and `B = [3, 4, 5]` then you should retur
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/intersection_of_two_arrays.py)
+
+---
+
+## [Probability] Waiting Time: Twilio [Easy]
+
+You are modeling the wait time a customer has for a support call as exponentially distributed with a mean of `10` minutes. Suppose a customer calls in and is told that all lines are currently busy, and the most recent last spot was occupied `5` minutes ago. What is the probability that the current customer will need to wait no more than another `5` minutes?
+
+### Solution
+Question 23 of the `pdf` file.
