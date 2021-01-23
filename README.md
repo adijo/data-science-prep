@@ -338,3 +338,11 @@ You are modeling the wait time a customer has for a support call as exponentiall
 
 ### Solution
 Question 23 of the `pdf` file.
+
+---
+
+## [Probability] Favorite Show: Disney [Medium]
+Alice and Bob are choosing their top `3` shows from a list of `50` shows. Assume that they choose independently of one another. Being relatively new to Hulu, assume also that they choose randomly within the `50` shows. What is the expected number of shows they have in common, and what is the probability that they do not have any shows in common?
+
+### Solution
+Question 24 of the `pdf` file and the simulation is [here.](https://github.com/adijo/data-science-prep/blob/master/code/favorite_show.py)
