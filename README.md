@@ -346,3 +346,13 @@ Alice and Bob are choosing their top `3` shows from a list of `50` shows. Assume
 
 ### Solution
 Question 24 of the `pdf` file and the simulation is [here.](https://github.com/adijo/data-science-prep/blob/master/code/favorite_show.py)
+
+---
+
+## [Coding] Splitting Parentheses: Twitter [Medium]
+Given a string with lowercase characters and left and right parentheses, remove the minimum number of parentheses so that the string is valid.
+
+For example, if the string is `)a(b((cd)e(f)g)` then return `ab((cd)e(f)g)`
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/splitting_parentheses.py)
