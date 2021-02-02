@@ -356,3 +356,12 @@ For example, if the string is `)a(b((cd)e(f)g)` then return `ab((cd)e(f)g)`
 
 ### Solution
 Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/splitting_parentheses.py)
+
+---
+
+## [Statistics] Bernoulli Samples: Stripe [Medium]
+Consider a Bernoulli random variable with parameter `p.` Say you observe the following samples: `[1, 0, 1, 1, 1]`. What is the log likelihood function for `p` and what is the MLE of `p`?
+
+### Solution
+Question 25 of the `pdf` file.
+
