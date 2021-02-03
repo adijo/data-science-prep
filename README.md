@@ -365,3 +365,13 @@ Consider a Bernoulli random variable with parameter `p.` Say you observe the fol
 ### Solution
 Question 25 of the `pdf` file.
 
+---
+
+## [Coding] Palindromic Subset: Airbnb [Medium]
+
+Given a number `x`, define a palindromic subset as any subsequence within `x` that is a palindrome. Write a function that returns the number of digits of the longest palindromic subset.
+
+For example, if `x` is `93567619` then you should return `5` since the longest subset would be `96769`, which is a `5` digit number.
+
+### Solution
+Code is [here.](https://github.com/adijo/data-science-prep/blob/master/code/palindromic_subset.py)
